@@ -1,1 +1,3 @@
-# bbibbi.net
+# vanilla-js-practice
+
+Vanilla JavaScript Toy Projects
