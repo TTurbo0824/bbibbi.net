@@ -6,7 +6,6 @@
 
 html,
 body {
-  overflow: hidden;
   background-color: #000;
 }
 
@@ -72,5 +71,9 @@ img {
 
 .cocktail:hover .overlay {
   opacity: 1;
+  cursor: pointer;
+}
+
+.select-bnt {
   cursor: pointer;
 }
