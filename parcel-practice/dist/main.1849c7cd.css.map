@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss"],"names":[],"mappings":"AAAA,KACE,uBAAA,CACA,UAAA,CACA","file":"main.1849c7cd.css","sourceRoot":"../src","sourcesContent":["body {\n  background-color: purple;\n  color: #fff;\n  text-align: center;\n}\n"]}
