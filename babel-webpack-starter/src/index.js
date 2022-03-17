@@ -9,4 +9,4 @@ async function getPosts() {
   return data;
 }
 
-getPosts();
+getPosts().then((posts) => console.log(posts));
