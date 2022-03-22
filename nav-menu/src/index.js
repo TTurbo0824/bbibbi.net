@@ -1,3 +1,24 @@
+import {createElementWithClass as create} from './utilities';
+
+const root = document.querySelector('#root');
+
+const menu = [
+  {title: 'Alpha', route: '/alpha', id: 'alpha'},
+  {title: 'Bravo', route: '/bravo', id: 'bravo'},
+  {title: 'Charlie', route: '/charlie', id: 'charlie'},
+  {title: 'Delta', route: '/delta', id: 'delta'},
+  {title: 'Echo', route: '/echo', id: 'echo'},
+];
+const navContainer = create('div', 'nav-container');
+menu.forEach(
+  (el) => {
+    const navItem = create('span', 'nav-item');
+    navItem.innerHTML = el.title;
+    navContainer.append(navItem)
+  }
+);
+
+root.append(navContainer);
 let navUnderline = document.getElementById('nav-underline');
 let navItems = document.querySelectorAll('nav span');
 let target = document.getElementById(currentLocation);
