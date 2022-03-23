@@ -1,3 +1,4 @@
+import './style.css';
 import {createElementWithClass as create} from './utilities';
 
 const root = document.querySelector('#root');
@@ -9,7 +10,8 @@ const menu = [
   {title: 'Delta', route: '/delta', id: 'delta'},
   {title: 'Echo', route: '/echo', id: 'echo'},
 ];
-const navContainer = create('div', 'nav-container');
+
+const navContainer = create('nav', 'nav-container');
 menu.forEach(
   (el) => {
     const navItem = create('span', 'nav-item');
@@ -22,7 +24,7 @@ root.append(navContainer);
 let navUnderline = document.getElementById('nav-underline');
 let navItems = document.querySelectorAll('nav span');
 let target = document.getElementById(currentLocation);
-let navB = document.getElementById('nav-bar');
+let navB = document.getElementByC('nav-bar');
 window.addEventListener('load', () => findTarget());
 window.addEventListener('resize', () => findTarget());
 navItems.forEach((menu) =>
