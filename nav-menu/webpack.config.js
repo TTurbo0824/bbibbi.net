@@ -9,6 +9,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
+    publicPath: '/',
     filename: '[name]_bundle.js',
   },
   module: {
@@ -38,5 +39,9 @@ module.exports = {
     },
     compress: true,
     port: 9000,
+    hot: true,
+    historyApiFallback: {
+      index: '/index.html',
+    },
   },
 };
