@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .nav-bar {
   display: flex;
   width: 100%;
@@ -11,7 +15,7 @@
 
 .nav-container {
   padding-left: 1rem;
-  background-color: pink;
+  /* background-color: pink; */
 }
 
 .nav-item {
@@ -33,4 +37,10 @@
   left: 0;
   height: 4px;
   transition: 0.5s;
+}
+
+.content {
+  display: flex;
+  padding: 2rem;
+  font-size: 1.5rem;
 }
