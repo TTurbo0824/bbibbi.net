@@ -1,5 +1,5 @@
 import './style.css';
-import { createElementWithClass as create } from './utilities';
+import { createElementWithClass as create, historyRouterPush } from './utilities';
 
 const root = document.querySelector('#root');
 const navBar = create('div', 'nav-bar');
@@ -73,10 +73,6 @@ const getPageContent = (page) => {
       break;
   }
   document.getElementById('content').innerHTML = contentToReturn;
-};
-
-const historyRouterPush = (pathName) => {
-  window.history.pushState({}, pathName, window.location.origin + pathName);
 };
 
 const findTarget = () => {
