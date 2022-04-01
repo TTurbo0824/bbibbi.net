@@ -24,7 +24,7 @@ const lastCardObserver = new IntersectionObserver(
   },
   {
     // 컨테이너의 margin의 조절
-    // 양수로 설정할 경우 타겟 요소를 pre-load가기에 유리
+    // 양수로 설정할 경우 타겟 구간 진입 전에 리소스를 pre-load 하기에 유리
     rootMargin: '100px'
   }
 );
